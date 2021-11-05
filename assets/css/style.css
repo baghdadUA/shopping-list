@@ -1,0 +1,100 @@
+body {
+    background: #3b3f45;
+    text-align: center;
+    margin: 0;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+h1 {
+    background: #4a4f56;
+    margin: 0;
+    padding: 21px 0;
+
+    color: #eb7e7f;
+}
+h1+ul {
+    padding: 0;
+}
+input {
+    margin: 0 12px;
+}
+#milk::after {
+    content: ' (Лактоза ONE_LOVE)';
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    font-size: 18px;
+    color: #cdcbd6;
+}
+#bread::after {
+    content: ' (Тільки темний)';
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    font-size: 18px;
+    color: #cdcbd6;
+}
+#veal::after {
+    content: ' (Накрайняк Яловичина)';
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    font-size: 18px;
+    color: #cdcbd6;
+}
+#fruits::after {
+    content: ' (Киш-мин, Банани, Ананас...)';
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    font-size: 18px;
+    color: #cdcbd6;
+}
+input:checked+label, input:checked+#milk::after, input:checked+#bread::after, input:checked+#veal::after, input:checked+#fruits::after {
+    text-decoration: line-through;
+    color: #a3a0b5;
+}
+label {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    cursor: pointer;
+}
+li {
+    background: #88839e;
+    padding: 8px 0;
+
+    list-style: none;
+    text-align: left;
+    font-size: 28px;
+    color: #ffffff;
+    transition: .35s;
+    border-top: 2px solid #88839e;
+    border-bottom: 2px solid #88839e;
+}
+li:nth-child(even) {
+    background: #7a7593;
+    border-top: 2px solid #7a7593;
+    border-bottom: 2px solid #7a7593;
+}
+li:hover {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    background: #625e77;
+}
+li:active{
+    background: #eb7e7f;;
+}
+p {
+    background: #4a4f56;
+    padding: 16px 0;
+
+    color: #eb7e7f;
+    font-size: 24px;
+}
